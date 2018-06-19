@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.Audio;
 public class Management : MonoBehaviour {
 
@@ -21,7 +19,7 @@ public class Management : MonoBehaviour {
     }
     void InitialSetup()
     {
-        //Default Resolution apply
+        //Apply Default Resolution
         Debug.Log(Screen.width + "x" + Screen.height);
         currResWidth = Screen.currentResolution.width;
         currResHeight = Screen.currentResolution.height;
@@ -35,7 +33,7 @@ public class Management : MonoBehaviour {
         //Player Settings ------ FullScreen Window
         //Windowed-> FullScreen-Logo, Windowed-Game ; MaximizedWindow-> Windowed-Logo, FulsScreen-Game ; FullScreenWindow-> Windowed-Logo, Fulscreen-Game;  ExclusiveFullScreen-> FullScreen-gresite rezolutiile
         Debug.Log(currResWidth + " x " + currResHeight);
-        //Default Sound settings apply
+        //Apply Default Sound settings
 
         MasterVolume.SetFloat("MasterVolume", 0);
         MusicVolume.SetFloat("MusicVolume", 0);
